@@ -1,0 +1,11 @@
+version: "3.2"
+services:
+  c-ubuntu:
+    build: .
+    container_name: c-ubuntu
+    restart: always
+    tty: true
+    volumes:
+      - ../:/home/dev/project
+    environment:
+      - DISPLAY=192.168.99.1:0.0
